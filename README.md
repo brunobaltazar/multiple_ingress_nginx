@@ -101,11 +101,10 @@ ingress.networking.k8s.io/hello-world-ingress configured
 
 ![app two](img/app_two.PNG)
 
+## Resultado sera algo como voce ver nessa imagen abaixo;
+![General Architecture](img/multiple_ingress.png)
+
 ## Removendo todos ingress criados:
 ```shell
 helm uninstall nginx-controller-01 -n nginx-controller-01 && helm uninstall nginx-controller-02 -n nginx-controller-02
 ```
-
-
-# Resultado sera algo como voce ver nessa imagen abaixo;
-![General Architecture](img/multiple_ingress.png)
