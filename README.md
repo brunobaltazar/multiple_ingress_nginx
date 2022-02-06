@@ -22,7 +22,7 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 ```
 
-## Verificar os parâmetros da instalação ingress-nginx/ingress-nginx via helm
+## Verificar os possiveis parâmetros da instalação ingress-nginx/ingress-nginx via helm
 ```shell
 helm show values ingress-nginx/ingress-nginx  ou helm show values ingress-nginx/ingress-nginx > values.yaml
 ```
