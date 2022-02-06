@@ -1,7 +1,7 @@
 - ✨Magic ✨
 
 # Instalação multiplos ingress nginx externos.
-## Documentação official e todos os creditos;
+## Documentação official
 
 [artifacthub.io ](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#install-chart)
 
