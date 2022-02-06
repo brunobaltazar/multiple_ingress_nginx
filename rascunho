@@ -1,0 +1,15 @@
+helm install ingress-nginx ingress-nginx/ingress-nginx --set controller.replicaCount=3 --create-namespace --namespace $NAMESPACE   
+helm install [RELEASE_NAME] ingress-nginx/ingress-nginx --create-namespace --namespace $NAMESPACE  
+helm uninstall [RELEASE_NAME] ingress-nginx/ingress-nginx --create-namespace --namespace $NAMESPACE  
+
+
+helm install ingress-nginx-1 ingress-nginx/ingress-nginx  \
+--namespace ingress-nginx-1 \
+--set controller.ingressClassResource.name=nginx-one \
+--set controller.ingressClassResource.controllerValue="example.com/ingress-nginx-1" \
+--set controller.ingressClassResource.enabled=true \
+--set controller.ingressClassByName=true
+
+namespace: foo
+  spec:
+    ingressClassName: nginx-one
