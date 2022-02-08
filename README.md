@@ -63,7 +63,9 @@ helm install nginx-controller-01 -f 01-values.yaml ingress-nginx/ingress-nginx -
 ```shell
 helm install nginx-controller-02 -f 02-values.yaml ingress-nginx/ingress-nginx --create-namespace --namespace nginx-controller-02 --version 4.0.13
 ```
-## Verificar as implantações via helm
+## Verificar as implantações
+
+![iplb](img/ip.PNG)
 
 ```shell
 helm list -A
